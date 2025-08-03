@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+.star{
+  margin: 10px 0;
+  position: relative;
+
+}
+span{
+  color: #fff;
+}
+.star::before{
+
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 4px;
+  background-color: #fff;
+  right: 40px;
+  bottom: 10px;
+}
+.star::after{
+
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 4px;
+  background-color: #fff;
+  left: 40px;
+  bottom: 10px;
+}

@@ -1,0 +1,37 @@
+.about{
+
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: #1ABC9C;
+ height: 95vh;
+}
+
+.about-box{
+  width: 70%;
+  margin:auto ;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+h1{
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+}
+p{
+  color: #fff;
+}
+@media (max-width: 664px){
+  h1{
+font-size: 30px;
+text-align: center;
+margin: 50px 0 10px 0;
+  }
+}

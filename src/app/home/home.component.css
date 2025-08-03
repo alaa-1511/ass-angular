@@ -1,0 +1,35 @@
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+background-color: #1ABC9C;
+ padding: 120px 0 100px 0;
+
+
+}
+.content{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+
+h1{
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+
+}
+
+.box-img{
+  width: 250px;
+margin-bottom: 30px;
+}
+@media (max-width: 664px){
+  h1{
+font-size: 35px;
+  }
+}

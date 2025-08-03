@@ -1,0 +1,47 @@
+<div class="prot">
+  <div class="container">
+
+    <div class="head ">
+        <h1>portfolio component</h1>
+  <div class="star">
+      <span><i class="fa-solid fa-star"></i></span>
+    </div>
+
+  </div>
+
+    <div class="row g-4">
+      @for (item of items; track $index) {
+          <div class="col-md-6  col-lg-4">
+            <div class="item-box">
+              <img   [src]="item.image" alt="" >
+                <div class="caption "  data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="modulItem=item" >
+      <span><i class="fa-solid fa-plus"></i></span>
+    </div>
+            </div>
+
+          </div>
+
+      }
+
+    </div>
+
+</div>
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-body">
+       <img [src]="modulItem.image" alt="">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,102 @@
+.prot{
+display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  flex-wrap: wrap;
+ /* height: 200vh; */
+ margin: 150px 0 100px 0;
+}
+img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.modal-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none !important;
+  background-color: transparent !important;
+}
+.modal-content img{
+width: 600px;
+}
+h1{
+  font-size: 40px;
+  font-weight: 700;
+  color: #2C3E50;
+  text-transform: uppercase;
+
+}
+.star{
+  margin: 15px 0;
+  position: relative;
+
+}
+span{
+  color: #2C3E50;
+}
+.star::before{
+
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 4px;
+  background-color: #2C3E50;
+  right: 40px;
+  bottom: 10px;
+}
+.star::after{
+
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 4px;
+  background-color: #2C3E50;
+  left: 40px;
+  bottom: 10px;
+}
+.head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.item-box{
+  position: relative;
+
+
+}
+
+
+ .caption{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color:#1ABC9C ;
+z-index: 999;
+top: 0px;
+left: 0px;
+opacity: 0;
+transition: all .5s;
+ display: flex;
+justify-content: center;
+align-items: center;
+}
+.item-box:hover .caption{
+opacity: 1;
+}
+.caption span{
+  font-size: 96px;
+  font-weight: 900;
+  color: #fff;
+
+}
+@media (max-width: 664px){
+  h1{
+font-size: 35px;
+  }
+}

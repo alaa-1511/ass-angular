@@ -1,0 +1,10 @@
+# Ignore node modules and environment files
+node_modules/
+dist/
+.env
+.vscode/
+*.log
+
+
+.angular/
+
